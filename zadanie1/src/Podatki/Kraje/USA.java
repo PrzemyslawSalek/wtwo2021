@@ -2,7 +2,13 @@ package Podatki.Kraje;
 import Podatki.Podatek;
 
 public class USA implements Kraj {
-    
+    String waluta = "dolar";
+
+    @Override
+    public String getWaluta() {
+        return waluta;
+    }
+
     @Override
     public Podatek PodatekLiniowy() {
         return new PodatekLiniowyUSA();

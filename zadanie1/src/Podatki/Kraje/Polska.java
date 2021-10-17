@@ -2,6 +2,12 @@ package Podatki.Kraje;
 import Podatki.Podatek;
 
 public class Polska implements Kraj {
+    String waluta = "zloty";
+
+    @Override
+    public String getWaluta() {
+        return waluta;
+    }
 
     @Override
     public Podatek PodatekLiniowy() {

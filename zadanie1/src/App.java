@@ -3,7 +3,7 @@ import Przedmioty.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Magazyn magazyn = new Magazyn();
+        MagazynAdapter magazyn = new MagazynAdapter();
         Kraj kraj = new Polska();
         
         magazyn.dodajDoSpisu(new Ksiazka(1999, 2));
@@ -13,8 +13,8 @@ public class App {
         magazyn.dodajDoSpisu(new Rzezba(1500, 3));
         magazyn.dodajDoSpisu(new Rzezba(900, 5));
 
-        System.out.println(magazyn.pobierzWatoscPoOpodatkowaniu(null));
-        System.out.println(magazyn.pobierzWatoscPoOpodatkowaniu(kraj.PodatekLiniowy()));
-        System.out.println(magazyn.pobierzWatoscPoOpodatkowaniu(kraj.PodatekProgresywny()));
+        System.out.println(magazyn.pobierzWatoscPoOpodatkowaniuEuro(null, kraj.getWaluta()));
+        System.out.println(magazyn.pobierzWatoscPoOpodatkowaniuEuro(kraj.PodatekLiniowy(), kraj.getWaluta()));
+        System.out.println(magazyn.pobierzWatoscPoOpodatkowaniuEuro(kraj.PodatekProgresywny(), kraj.getWaluta()));
     }
 }

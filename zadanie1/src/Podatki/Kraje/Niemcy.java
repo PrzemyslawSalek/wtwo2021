@@ -2,6 +2,12 @@ package Podatki.Kraje;
 import Podatki.Podatek;
 
 public class Niemcy implements Kraj {
+    String waluta = "euro";
+
+    @Override
+    public String getWaluta() {
+        return waluta;
+    }
 
     @Override
     public Podatek PodatekLiniowy() {
