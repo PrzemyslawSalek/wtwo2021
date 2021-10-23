@@ -1,4 +1,4 @@
-##Budowniczy
+## Budowniczy
 
 Napisz program, który dla tablicy o rozmiarze 10 z wartościami typu int, wyświetli na ekran w zależności od wyboru (wav, mp3, ogg) „wygenerowany” napis. W zależności od formatu będzie miał on inną postać.
 
