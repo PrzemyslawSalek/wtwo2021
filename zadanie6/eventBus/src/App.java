@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        EventBroker eventBroker = new EventBroker();
+        EventBus eventBroker = new EventBus();
 
         Temperature temperature = new Temperature(eventBroker);
         Wind wind = new Wind(eventBroker);

@@ -3,13 +3,13 @@ import java.util.Random;
 public class Temperature implements Observable {
 
     private Random rand;
-    private EventBroker eventBroker;
+    private EventBus eventBroker;
 
     private int minTemperature;
     private int maxTemperature;
     private int currentTemperature;
 
-    public Temperature(EventBroker eventBroker) {
+    public Temperature(EventBus eventBroker) {
         this.rand  = new Random();
         this.eventBroker = eventBroker;
         this.minTemperature  = -30;

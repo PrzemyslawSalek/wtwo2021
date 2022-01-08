@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class EventBroker {
+public class EventBus {
     Map<Observable, ArrayList<Observer>> eventMap;
 
-    public EventBroker() {
+    public EventBus() {
         this.eventMap = new HashMap<Observable, ArrayList<Observer>>();
     }
 

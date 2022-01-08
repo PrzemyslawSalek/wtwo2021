@@ -3,13 +3,13 @@ import java.util.Random;
 public class Wind implements Observable {
 
     Random rand;
-    private EventBroker eventBroker;
+    private EventBus eventBroker;
 
     private int minWindSpeed;
     private int maxWindSpeed;
     private int currentWindSpeed;
     
-    public Wind(EventBroker eventBroker) {
+    public Wind(EventBus eventBroker) {
         this.rand = new Random();
         this.eventBroker = eventBroker;
         this.minWindSpeed = 0;
